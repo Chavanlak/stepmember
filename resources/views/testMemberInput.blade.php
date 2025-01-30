@@ -40,6 +40,7 @@
                             <div class="d-flex">
                                 <input type="text" class="form-control me-2" id="MemberID"placeholder="ชื่อ">
                                 <input type="text" class="form-control me-2" id="MemberID"placeholder="นามสกุล">
+<<<<<<< HEAD
                                 {{-- <p><strong>First Name:</strong> {{ $member->MemName_T }}</p>
                                 <p><strong>Last Name:</strong> {{ $member->MemLastName_T }}</p>
                                 <p><strong>Staff Code:</strong> {{ $member->MemberID }}</p> --}}
@@ -52,6 +53,15 @@
                             <br>
                             <button type="submit" class="btn btn-primary"
                                 style="font-family: 'Raleway', sans-serif;">บันทึก</button>
+=======
+
+                            </div><br>
+                            <div class="d-flex">
+                                <input type="text" class="form-control me-2" id="MemberID"placeholder="ห้อง" style="width: 280px;">
+                            </div>
+                            <br>
+                             <button type="submit" class="btn btn-primary" style="font-family: 'Raleway', sans-serif;">บันทึก</button>
+>>>>>>> 2b67b479eb4732353f32a9e5cbfadba3ba041bf1
                         </div>
                     </form>
                 </div>
