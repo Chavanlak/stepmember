@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\memberregisController;
+use App\Http\Controllers\tsr_memberchobController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +24,11 @@ Route::get('/testsearch', function () {
 Route::get('/testMemberInput', function () {
     return view('testMemberInput');
 });
+// Route::get('/getId', function () {
+//     return view('getId');
+// });
+Route::get('/getId',[memberregisController::class,'getAllMemberId']);
+Route::get('/getId',[memberregisController::class,'getAllMemberId']);
+Route::get('/searchMember',[memberregisController::class,'MemberIdinput']);
+Route::post('/searchpost',[memberregisController::class,'save']);
+// Route::get('/testserch',[memberregisController::class,'getMemberId']);

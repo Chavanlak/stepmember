@@ -31,17 +31,27 @@
                 <div class="card border mb-3  mt-5">
                     <form>
                         <div class="mb-3">
-                            <div style="color: rgb(82, 82, 82); font-size: 24px; font-weight: bold; font-family: 'Inter', sans-serif;">
+                            <div
+                                style="color: rgb(82, 82, 82); font-size: 24px; font-weight: bold; font-family: 'Inter', sans-serif;">
                                 <p>CHECK MEMBER</p>
                             </div>
 
                             {{-- <label for="MemberID" class="form-label">MemberID</label> --}}
                             <div class="d-flex">
-                                <input type="text" class="form-control me-2" id="MemberID"
-                                    placeholder="กรอกรหัสสมาชิก">
-                                <button type="submit" class="btn btn-primary">ค้นหา</button>
+                                <input type="text" class="form-control me-2" id="MemberID"placeholder="ชื่อ">
+                                <input type="text" class="form-control me-2" id="MemberID"placeholder="นามสกุล">
+                                {{-- <p><strong>First Name:</strong> {{ $member->MemName_T }}</p>
+                                <p><strong>Last Name:</strong> {{ $member->MemLastName_T }}</p>
+                                <p><strong>Staff Code:</strong> {{ $member->MemberID }}</p> --}}
                             </div>
-                            <div id="MemberIDHelp" class="form-text">กรุณากรอกรหัสสมาชิกให้ครบถ้วนเเละถูกต้อง</div>
+                            <div>
+                                <br>
+                                <input type="text" class="form-control me-2" id="MemberID"placeholder="ห้อง"
+                                    style="width: 280px">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary"
+                                style="font-family: 'Raleway', sans-serif;">บันทึก</button>
                         </div>
                     </form>
                 </div>

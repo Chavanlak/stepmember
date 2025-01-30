@@ -10,6 +10,7 @@ class tsr_memberchob extends Model
     protected $connection = 'secondary';
     protected $primaryKey = 'IdMember';
     public $timestamps = false;
-    protected $table = 'tsr_memberchob';
+    // protected $table = 'tsr_memberchob';
+    protected $table = 'memberinput';
     use HasFactory;
 }

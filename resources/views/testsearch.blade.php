@@ -30,18 +30,16 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-6">
                 <div class="card border mb-3  mt-5">
-                    <form>
+                    <form >
                         <div class="mb-3">
                             <div style="color: rgb(82, 82, 82); font-size: 24px; font-weight: bold; font-family: 'Inter', sans-serif;">
                                 <p>CHECK MEMBER</p>
                             </div>
 
-                            {{-- <label for="MemberID" class="form-label">MemberID</label> --}}
                             <div class="d-flex">
                                 <input type="text" class="form-control me-2" id="MemberID"
                                     placeholder="กรอกรหัสสมาชิก">
-                                {{-- <button type="submit" class="btn btn-primary" style="font-family: 'Raleway', sans-serif;">ค้นหา</button> --}}
-                                {{-- <a href="/#" class="btn btn-secondary" style="font-family: 'Raleway', sans-serif;">ค้นหา</a> --}}
+                              
                                 <a href="/testMemberInput" class="btn btn-secondary">
                                   <i class="fas fa-search" style="font-size: 10px;"></i>
                               </a>
@@ -53,6 +51,17 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const memberID = document.getElementById('MemberID').value;
+            if (memberID) {
+                console.log('Member ID:', memberID);
+                // You can send this to the backend or use it in any other way
+            } else {
+                alert('Please enter a Member ID');
+            }
+        });
+    </script>
 </body>
 
 </html>
